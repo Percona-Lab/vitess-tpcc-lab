@@ -1,10 +1,4 @@
 {
-  "sharded": false,
-  "tables": {
-    "item1": {}
-  }
-}
-{
   "sharded": true,
   "vindexes": {
     "hash": {
@@ -91,6 +85,14 @@
           "name": "hash"
         }
       ]
+    },
+    "item1": {
+      "column_vindexes": [
+        {
+          "column": "i_id",
+          "name": "hash"
+        }
+      ]
     }
-  }
+}
 }
